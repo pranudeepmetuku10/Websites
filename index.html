@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen | AI/ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Terminal Boot Sequence -->
+    <div id="bootScreen" class="boot-screen">
+        <div class="boot-content">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-boot">
+                <div class="boot-line"><span class="boot-prompt">$</span> <span class="boot-text">Initializing neural networks...</span></div>
+                <div class="boot-line"><span class="boot-prompt">$</span> <span class="boot-text">Loading model checkpoints...</span></div>
+                <div class="boot-line"><span class="boot-prompt">$</span> <span class="boot-text">Optimizing hyperparameters...</span></div>
+                <div class="boot-line"><span class="boot-prompt">$</span> <span class="boot-text">Preparing inference pipeline...</span></div>
+                <div class="boot-line"><span class="boot-prompt">$</span> <span class="boot-text">Rendering portfolio interface...</span></div>
+                <div class="boot-line boot-complete"><span class="boot-prompt">$</span> <span class="boot-text">System ready. Welcome.</span> <span class="cursor"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AC</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="musicToggle" class="music-toggle" title="Toggle ambient music">
+                    <span class="music-icon">🎵</span>
+                </button>
+                <button id="themeToggle" class="theme-toggle" title="Coming soon: Light mode">◐</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Elements -->
+    <div class="background-grid"></div>
+    <div class="background-particles"></div>
+    <div class="background-glow"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-prefix">Hi, I'm</span>
+                    <span class="title-name">Alex Chen</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-subtitle">
+                    Building AI systems, training neural networks, engineering data pipelines, and shipping products that think.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-icon">→</span>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                        <span class="btn-icon">↗</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-card">
+                    <div class="card-header">
+                        <span class="card-title">model.py</span>
+                        <span class="card-status">●</span>
+                    </div>
+                    <div class="card-code">
+                        <div class="code-line"><span class="code-key">class</span> <span class="code-class">TransformerModel</span>:</div>
+                        <div class="code-line indent-1"><span class="code-key">def</span> <span class="code-func">forward</span>(<span class="code-var">self</span>, <span class="code-var">x</span>):</div>
+                        <div class="code-line indent-2"><span class="code-comment"># Process embeddings</span></div>
+                        <div class="code-line indent-2"><span class="code-var">x</span> = <span class="code-func">self</span>.<span class="code-var">attention</span>(<span class="code-var">x</span>)</div>
+                        <div class="code-line indent-2"><span class="code-var">return</span> <span class="code-var">x</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-content">
+                <p class="about-intro">
+                    I'm a graduate student in AI/ML Engineering obsessed with building intelligent systems that scale. 
+                    My focus is on transformers, LLMs, RAG systems, and the infrastructure that powers them.
+                </p>
+                <p class="about-text">
+                    Over the past years, I've worked on:
+                </p>
+                <ul class="skills-list">
+                    <li><span class="skill-tag">Large Language Models</span> - Fine-tuning, prompt engineering, RLHF</li>
+                    <li><span class="skill-tag">RAG Systems</span> - Retrieval-augmented generation at scale</li>
+                    <li><span class="skill-tag">MLOps</span> - Model deployment, monitoring, and governance</li>
+                    <li><span class="skill-tag">Data Pipelines</span> - ETL, feature engineering, data infrastructure</li>
+                    <li><span class="skill-tag">Scalable Systems</span> - Distributed training, inference optimization</li>
+                </ul>
+            </div>
+
+            <div class="about-cards">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">ML Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3B+</div>
+                    <div class="stat-label">Parameters Trained</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Model Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-stack">
+            <h3 class="tech-title">Tech Stack & Tools</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <span class="tech-category">ML Frameworks</span>
+                    <p>PyTorch, TensorFlow, JAX, Hugging Face</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-category">Data & Pipeline</span>
+                    <p>Apache Spark, Airflow, Pandas, DuckDB</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-category">Deployment</span>
+                    <p>Docker, Kubernetes, AWS, GCP, Ray</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-category">Languages</span>
+                    <p>Python, SQL, Bash, Go, JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-category">Databases</span>
+                    <p>PostgreSQL, MongoDB, Redis, Elasticsearch</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-category">Monitoring</span>
+                    <p>Prometheus, Grafana, Weights & Biases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-tag">LLMs</span>
+                    <span class="project-tag">RAG</span>
+                </div>
+                <h3 class="project-title">Semantic Document Intelligence</h3>
+                <p class="project-description">
+                    Built a production RAG system that processes 1M+ documents using vector embeddings and retrieval optimization. 
+                    Achieves 95% accuracy on complex domain-specific queries.
+                </p>
+                <div class="project-tech">
+                    <span>Transformers</span>
+                    <span>Pinecone</span>
+                    <span>FastAPI</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="#" class="project-link">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-tag">MLOps</span>
+                    <span class="project-tag">Inference</span>
+                </div>
+                <h3 class="project-title">Real-time Model Serving Pipeline</h3>
+                <p class="project-description">
+                    Engineered a distributed inference platform supporting 10k+ concurrent requests with sub-100ms latency. 
+                    Includes A/B testing, canary deployments, and automatic rollback.
+                </p>
+                <div class="project-tech">
+                    <span>Kubernetes</span>
+                    <span>TensorRT</span>
+                    <span>gRPC</span>
+                    <span>Prometheus</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">GitHub</a>
+                    <a href="#" class="project-link">Blog Post</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-tag">Data Engineering</span>
+                    <span class="project-tag">Pipeline</span>
+                </div>
+                <h3 class="project-title">Scalable Feature Store</h3>
+                <p class="project-description">
+                    Built an enterprise feature store handling 500B+ features daily with 99.9% SLA. 
+                    Supports real-time and batch feature computation with time-travel capabilities.
+                </p>
+                <div class="project-tech">
+                    <span>Spark</span>
+                    <span>DuckDB</span>
+                    <span>Redis</span>
+                    <span>Airflow</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Architecture Docs</a>
+                    <a href="#" class="project-link">Open Source</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Production</span>
+                </div>
+                <h3 class="project-title">High-Precision Object Detection</h3>
+                <p class="project-description">
+                    Trained and deployed a custom YOLO variant achieving 94% mAP on edge devices. 
+                    Optimized with quantization and pruning for real-time performance.
+                </p>
+                <div class="project-tech">
+                    <span>YOLO</span>
+                    <span>ONNX</span>
+                    <span>TensorFlow Lite</span>
+                    <span>OpenCV</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">GitHub</a>
+                    <a href="#" class="project-link">Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-cta">
+            <p>See more on <a href="#" class="cta-link">GitHub</a> and <a href="#" class="cta-link">Hugging Face</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Let's Build Together</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-content">
+            <p class="contact-intro">
+                I'm always interested in discussing AI, ML systems, and innovative tech. 
+                Whether you have a project idea, collaboration opportunity, or just want to chat about AI—let's connect.
+            </p>
+
+            <div class="contact-methods">
+                <a href="mailto:alex@example.com" class="contact-card">
+                    <span class="contact-icon">✉</span>
+                    <span class="contact-text">Email</span>
+                    <span class="contact-detail">alex@example.com</span>
+                </a>
+                <a href="https://linkedin.com" class="contact-card" target="_blank">
+                    <span class="contact-icon">in</span>
+                    <span class="contact-text">LinkedIn</span>
+                    <span class="contact-detail">/in/alexchen</span>
+                </a>
+                <a href="https://github.com" class="contact-card" target="_blank">
+                    <span class="contact-icon">⚙</span>
+                    <span class="contact-text">GitHub</span>
+                    <span class="contact-detail">@alexchen-ml</span>
+                </a>
+                <a href="https://twitter.com" class="contact-card" target="_blank">
+                    <span class="contact-icon">𝕏</span>
+                    <span class="contact-text">Twitter</span>
+                    <span class="contact-detail">@alexai_engineer</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Command Palette (Easter Egg) -->
+    <div id="commandPalette" class="command-palette">
+        <div class="palette-header">
+            <span class="palette-title">Command Palette</span>
+            <button id="closePalette" class="palette-close">×</button>
+        </div>
+        <input type="text" id="commandInput" class="palette-input" placeholder="Type a command (try: 'help', 'theme', 'secret')...">
+        <div id="paletteOutput" class="palette-output"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Crafted with <span class="heart">♡</span> and machine learning</p>
+            <div class="footer-year" id="yearDisplay"></div>
+        </div>
+    </footer>
+
+    <!-- Audio for ambient music -->
+    <audio id="ambientMusic" loop>
+        <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
